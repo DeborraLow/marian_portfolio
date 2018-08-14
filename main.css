@@ -11,7 +11,6 @@ html {
 /* HEADER STYLE */
 
 header {
-  border: 2px solid red;
   padding: 25px;
   
   display: flex;
@@ -45,12 +44,12 @@ header {
   text-decoration: none;
   letter-spacing: 2px;
   
-  color: maroon;
+  color: black;
   padding: 15px;
 }
 
 .linkMenu:hover {
-  text-decoration: underline;
+  text-decoration: line-through;
 }
 
 .headerLogo {
@@ -65,15 +64,21 @@ header {
 
 .container {
   height: 70vh;
-  border: 2px solid green;
   
   display: grid;
   grid-template-columns: repeat(8,1fr);
   grid-template-rows: repeat(2,1fr);
 }
 
+@media (max-width:1050px) {
+  .container {
+    height: 100vh;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+  }
+}
+
 .containerItem {
-  border: 1px solid blue;
   
   display: flex;
   justify-content: center;
@@ -83,11 +88,172 @@ header {
 }
 
 .effectOne {
-  background-color: darkblue;
-  color: lightblue;
+  background-color: gray;
+  color: lightgray;
+  
+  transition: all .4s ease-in-out;
+}
+
+.effectOne:hover {
+  background-color: maroon;
+  font-size: 10em;
+}
+
+@media (max-width:1050px){
+  .effectOne:hover {
+    background-color: gray;
+    font-size: 3em;
+    color: lightgray;
+  }
+  .effectOne:focus {
+    background-color: maroon;
+  }
 }
 
 .effectTwo {
-  background-color: maroon;
-  color: lightcoral;
+  background-image: linear-gradient(black,black);
+  background-size: cover;
+  background-position: right;
+  color: dimgrey;
+  
+  transition: all .4s ease-in-out;
+}
+
+.effectTwo:hover {
+  border: 25px double white;
+  background-image: url(images/splash_bgrd_2.jpg);
+  background-size: cover;
+  background-position: left;
+  color: maroon;
+  text-decoration: line-through;
+}
+
+.containerItemSpecial {
+    border: 10px solid black;
+    overflow: hidden;
+    position: relative;
+  
+    transition: border .4s ease-in-out;
+}
+
+.containerItemSpecial:hover {
+  border: 5px solid white;
+}
+
+.containerItemSpecial:hover .effectThree {
+    transform: translateY(250px);
+    transform: scaleY(2);
+}
+
+.containerItemSpecial:hover .effectFive {
+    transform: translateX(0px);
+}
+
+.containerItemSpecial:hover p {
+    color: whitesmoke;
+}
+
+.containerItemSpecial p {
+  width: 100%;
+  height: 100%;
+  
+  position: absolute;
+  float: right;
+  z-index: 1;
+  
+  font-size: 5em;
+  line-height: 4em;
+  text-align: center;
+  
+  transition: all .3s ease-in-out;
+}
+.effectThree {
+  width: 100%;
+  height: 100%;
+  background-color: #16174f;
+  z-index: 0;
+  
+  transform: translateY(-250px);
+  transform: scaleY(0);
+  transition: all .8s ease-in-out;
+}
+
+.effectFour {
+  background-image: linear-gradient( white,white );
+  background-size: cover;
+  background-position: right;
+  color: black;
+  opacity: 1;
+  
+  transition: all .4s ease-in-out;
+}
+
+.effectFour:hover {
+  background-image: url(images/splash_bgrd.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 5em;
+}
+
+/* FOOTER */
+
+.bottom {
+  width: 70%;
+  margin: 25px auto;
+}
+
+.bottomList {
+  padding: 0;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  
+  list-style: none;
+}
+
+.bottomListItem {
+  font-size: .7em;
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 1px;
+  
+  flex-basis: 25%;
+}
+
+@media (max-width: 1050px){
+  .bottom {
+    width: 100%;
+  }
+  
+  .bottomList {
+    justify-content: flex-start;
+  }
+  
+  .bottomListItem {
+    flex-basis: 25%;
+  }
+}
+
+@media (max-width: 700px){
+  .bottom {
+    margin: 0;
+    padding: 25px;
+  }
+  
+  .bottomList {
+    flex-flow: row wrap;
+  }
+  .bottomListItem{
+    flex-basis: 50%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 450px){
+  .bottomListItem {
+    flex-basis: 100%;
+  }
 }
