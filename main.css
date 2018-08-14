@@ -11,12 +11,22 @@ html {
 /* HEADER STYLE */
 
 header {
+  width: 100vw;
   padding: 25px;
   
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 700px){
+  header {
+    flex-flow: column nowrap;
+  }
+  .menuList {
+    width: 100vw;
+  }
 }
 
 .menuList {
@@ -55,9 +65,9 @@ header {
 .headerLogo {
   width: 100px;
 }
+
 .headerLogo > a > img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
 }
 
 /* CONTAINER STYLE */
@@ -253,6 +263,10 @@ header {
 }
 
 @media (max-width: 450px){
+  .bottomList {
+    border-left: 2px solid black;
+    padding-left: 25px;
+  }
   .bottomListItem {
     flex-basis: 100%;
   }
