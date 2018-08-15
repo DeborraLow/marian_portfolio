@@ -6,13 +6,15 @@
 html {
   margin: 0;
   font-family: 'Helvetica',sans-serif;
+  font-size: 87.5%;
+  color: darkslategray;
 }
 
 /* HEADER STYLE */
 
 header {
   width: 100vw;
-  padding: 25px;
+  padding: 15px;
   
   display: flex;
   flex-flow: row nowrap;
@@ -227,6 +229,7 @@ header {
 .bottomListItem {
   font-size: .7em;
   text-transform: capitalize;
+  font-style: italic;
   text-align: center;
   letter-spacing: 1px;
   
@@ -271,3 +274,99 @@ header {
     flex-basis: 100%;
   }
 }
+
+
+/* 1 -> TYPOGRAPHY */
+
+.introTitle {
+  
+}
+
+.introSubtitle {
+  
+}
+
+.introParagraph {
+  padding: 25px 25px 0px 0px;
+}
+
+.introApproachNumber {
+  
+}
+
+.introApproachTitle {
+  
+}
+
+.specsTitle {
+  text-transform: uppercase;
+  font-size: .9em;
+  color: black;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
+.specsParagraph {
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+.captionItalic {
+  font-style: italic;
+  font-size: .8em;
+}
+
+/* || LAYOUT || */
+
+.intro {
+  width: 40vw;
+  padding: 15px 0px;
+}
+
+.introElements_leftMargin {
+  margin-left: 75px;
+}
+
+.introArrow {
+  width: auto;
+  position: relative;
+  left: -25px;
+}
+
+.specsListDashed {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.specsAndHero {
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.specs {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.specsItem:nth-child(1){
+  flex-basis: 40%;
+}
+
+.heroImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border: 2px solid blue;
+  position: relative;
+  top: -30px;
+}
+
+.heroImage img {
+  width: 100%;
+  height: auto;
+}
+
+
