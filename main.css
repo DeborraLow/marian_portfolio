@@ -5,6 +5,7 @@
 
 html {
   margin: 0;
+  padding: 0;
   font-family: 'Helvetica',sans-serif;
   font-size: 87.5%;
   color: darkslategray;
@@ -20,6 +21,106 @@ body {
   margin: 0 auto;
   border: 2px solid cyan;
   max-width: 1440px;
+}
+
+/* --- TYPOGRAPHY --- */
+
+.introTitle {
+  
+}
+
+.approachTitle {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.introParagraph {
+  padding: 25px 25px 0px 0px;
+}
+
+.introApproachNumber {
+  font-size: 3em;
+  font-style: italic;
+  color: black;
+}
+
+@media (max-width:750px) {
+  .introApproachNumber {
+    font-size: 2em;
+  }
+  .introApproachTitle {
+    letter-spacing: 0px;
+  }
+}
+
+
+.introApproachTitle {
+  text-transform: uppercase;
+  font-size: .8em;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: black;
+}
+
+.specsTitle {
+  text-transform: uppercase;
+  font-size: .9em;
+  color: black;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
+.specsParagraph {
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+.captionItalic {
+  font-style: italic;
+  font-size: .8em;
+}
+
+.keytakeAwaysTittle {
+  color: maroon;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+  padding: 15px 0px;
+  margin-left: 75px;
+}
+
+.keytakeAwaysList {
+  list-style: none;
+  padding: 0;
+  margin-left: 75px;
+  
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: .9em;
+  letter-spacing: 1px;
+}
+
+.keytakeAwaysTitle_bold {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.keytakeAwaysTitle_regular {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.keytakeAwaysParagraph {
+  font-size: .8em;
+  padding-bottom: 15px;
+}
+
+@media (max-width:700px){
+  .keytakeAwaysParagraph {
+    width: 80%;
+  }
 }
 
 /* HEADER STYLE */
@@ -290,57 +391,11 @@ header {
 /* ---------- GUCCI DECODER START HERE ---------- */
 
 
-/* --- TYPOGRAPHY --- */
-
-.introTitle {
-  
-}
-
-.introSubtitle {
-  
-}
-
-.introParagraph {
-  padding: 25px 25px 0px 0px;
-}
-
-.introApproachNumber {
-  font-size: 3em;
-  font-style: italic;
-  color: black;
-}
-
-.introApproachTitle {
-  text-transform: uppercase;
-  font-size: .8em;
-  letter-spacing: 1px;
-  font-weight: 300;
-  color: black;
-}
-
-.specsTitle {
-  text-transform: uppercase;
-  font-size: .9em;
-  color: black;
-  letter-spacing: 1px;
-  padding-bottom: 20px;
-}
-
-.specsParagraph {
-  text-transform: uppercase;
-  font-size: .8em;
-}
-
-.captionItalic {
-  font-style: italic;
-  font-size: .8em;
-}
-
 /* --- LAYOUT --- */
 
 .intro {
   width: 40vw;
-  padding: 15px 0px;
+  padding: 50px 0px;
 }
 
 @media (max-width: 1050px) {
@@ -366,7 +421,6 @@ header {
 }
 
 .introArrow {
-  width: auto;
   position: relative;
   left: -25px;
 }
@@ -471,3 +525,130 @@ header {
   text-decoration: none;
 }
 
+.benchmarkingMap {
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  background-image: url(images/gucci/sectormap_brandnames_opt.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  transition: all .5s ease-in-out;
+}
+
+@media (max-width: 750px) {
+  .benchmarkingMap{
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  .benchmarkingMap{
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.benchmarkingMap:hover {
+  background-image: url(images/gucci/sectormap_emergentluxury_opt.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.keytakeAwaysWrapper{
+  margin: 25px 0px;
+  width: 100vw;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  
+  overflow: hidden;
+}
+
+.keytakeAwaysArrow {
+  position: relative;
+  right: -50px;
+}
+
+.keytakeAways {
+  width: 40vw;
+}
+
+@media (max-width: 1050px) {
+  .keytakeAways {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 750px) {
+  .keytakeAways {
+    width: 100vw;
+  }
+}
+
+/* Brand Analysis Collage */
+
+.collage {
+  width: 100vw;
+  height: auto;
+}
+
+.collage img {
+  width: 100%;
+  height: auto;
+}
+
+/* Brand Analysis TakeAways */
+
+.keytakeAwaysBigList {
+  
+  margin: 25px auto;
+  width: 90vw;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.keytakeAwaysBigList_item {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.keytakeAwaysBigList_itemTwo {
+  flex-basis: 50%;
+  padding-right: 40px;
+}
+
+@media (max-width: 1050px) {
+  .keytakeAwaysBigList {
+    flex-flow: row wrap;
+  }
+  
+  .keytakeAwaysBigList_item {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width:700px) {
+  
+  .keytakeAwaysBigList_item{
+    flex-basis: 100%;
+  }
+  
+  .keytakeAwaysBigList_itemTwo {
+    flex-basis: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+.gucciPrototype {
+  display: flex;
+}
+
+.gucciPrototypeItem {
+  border: 2px solid red;
+}
