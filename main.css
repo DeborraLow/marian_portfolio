@@ -874,8 +874,6 @@ header {
 /* Insight */
 
 .insightGrid {
-  border: 2px solid red;
-  
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: 1fr;
@@ -902,3 +900,39 @@ header {
   height: auto;
 }
 
+
+/* ---- SGH STYLES HERE ---- */
+
+.benchmarkingMapSgh {
+  margin: 0 auto;
+  width: 620px;
+  height: 526px;
+  background-image: url(images/sgh/sghSectormapFirst.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  transition: all .5s ease-in-out;
+}
+
+@media (max-width: 850px) {
+  .benchmarkingMapSgh{
+    width: 400px;
+    height: 306px;
+  }
+}
+
+/* circle grid SGH */
+
+.circleGridSubtitle {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.circleGridSubtitle h3{
+  border-top: 1px dotted black;
+  
+  flex-basis: 50%;
+  text-align: center;
+  padding: 15px 0px;
+}
