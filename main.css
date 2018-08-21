@@ -1017,3 +1017,33 @@ header {
   width: 100%;
   height: auto;
 }
+
+
+/*  ----- CURRICULUM VITAE STYLE -----  */
+
+.career {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.careerItem {
+  flex-basis: 25%;
+  padding: 25px;
+}
+
+@media (max-width:850px) {
+  .career {
+    flex-flow: row wrap;
+  }
+  
+  .careerItem {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width:450px) {
+  .careerItem {
+    flex-basis: 90%;
+  }
+}
