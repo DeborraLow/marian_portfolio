@@ -112,13 +112,13 @@ body {
 }
 
 .keytakeAwaysParagraph {
-  font-size: .8em;
+  font-size: .9em;
   padding-bottom: 15px;
 }
 
 @media (max-width:700px){
   .keytakeAwaysParagraph {
-    width: 80%;
+    width: 60%;
   }
 }
 
@@ -900,7 +900,6 @@ header {
   height: auto;
 }
 
-
 /* ---- SGH STYLES HERE ---- */
 
 .benchmarkingMapSgh {
@@ -935,4 +934,86 @@ header {
   flex-basis: 50%;
   text-align: center;
   padding: 15px 0px;
+}
+
+/* Premium perception map */
+
+.sectorMapSgh {
+  margin: 0 auto;
+  width: 550px;
+  height: 550px;
+  background-image: url(images/sgh/sectorMapOne.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  transition: all .5s ease-in-out;
+  filter: grayscale(1);
+}
+
+@media (max-width: 750px) {
+  .sectorMapSgh{
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .sectorMapSgh{
+    width: 350px;
+    height: 350px;
+  }
+}
+
+.sectorMapSgh:hover {
+  background-image: url(images/sgh/sectorMapTwo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(0);
+}
+
+/* Art Direction & UX */
+
+.artDirectionGrid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 25px;
+  padding: 25px;
+}
+
+@media (max-width: 950px) {
+  .artDirectionGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+  }
+  .artDirectionImage img {
+    width: 500px;
+  }
+}
+
+.artDirectionGridItem {
+}
+
+.artDirectionImage {
+  width: 100%;
+  text-align: center;
+}
+
+.artDirectionImage img{
+  width: 300px;
+}
+
+/* Prototype */
+
+.prototypeFullImage {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+}
+
+.prototypeFullImage img {
+  width: 100%;
+  height: auto;
 }
