@@ -129,6 +129,9 @@ p {
 .keytakeAwaysTitle_bold {
   font-family: 'Poppins', sans-serif;
   font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
 }
 
 .keytakeAwaysTitle_regular {
@@ -1178,7 +1181,7 @@ header {
   display: inline-block;
   position: relative;
 
-  flex-basis: 27%;
+  flex-basis: 25%;
   padding: 25px;
   
   transition: all .3s ease-in-out;
@@ -1206,7 +1209,10 @@ header {
   opacity: 1;
   
   color: black;
-  font-size: 3em;
+  font-family: 'Adobe Garamond Pro',serif;
+  font-weight: lighter;
+  font-size: 2.2em;
+  letter-spacing: 1px;
   
   transition: all .4s ease-in-out;
 }
@@ -1218,7 +1224,7 @@ header {
 
 .nowThumbnail:hover .thumbnailTitle {
   z-index: -5;
-  font-size: 2.8em;
+  font-size: 1.8em;
   left: 10px;
   opacity: .2;
 }
