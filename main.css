@@ -5,10 +5,7 @@
 
 html {
   max-width: 1440px;
-  margin: 0;
   padding: 0;
-  font-family: 'Helvetica',sans-serif;
-  font-size: 87.5%;
   color: darkslategray;
 }
 
@@ -24,16 +21,33 @@ body {
 
 /* --- TYPOGRAPHY --- */
 
+p {
+  font-family: 'Adobe Garamond Pro', sans-serif;
+}
+
 .introTitle {
-  
+  font-family:'Adobe Garamond Pro', sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.introSubtitle {
+  font-family: 'Adobe Garamond Pro', sans-serif;
+  font-weight: 300;
+  font-size: 1.3em;
 }
 
 .approachTitle {
+  font-family: 'Poppins',sans-serif;
+  font-size: 1.1em;
+  letter-spacing: 3px;
+  font-weight: 400;
+  
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .introParagraph {
+  font-family: 'Adobe Garamond Pro', sans-serif;
   padding: 25px 25px 0px 0px;
 }
 
@@ -54,35 +68,47 @@ body {
 
 
 .introApproachTitle {
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
-  font-size: .8em;
+  font-size: .7em;
   letter-spacing: 1px;
   font-weight: 300;
   color: black;
 }
 
 .specsTitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
-  font-size: .9em;
+  font-size: .8em;
   color: black;
   letter-spacing: 1px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .specsParagraph {
+  font-family: 'Poppins', sans-serif;
+  font-size: .7em;
+  letter-spacing: 1px;
+  font-weight: 300;
   text-transform: uppercase;
-  font-size: .8em;
 }
 
 .captionItalic {
+  font-family: 'Adobe Garamond Pro', sans-serif;
   font-style: italic;
+  letter-spacing: 1px;
   font-size: .8em;
 }
 
 .keytakeAwaysTittle {
-  color: maroon;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
+  font-size: .8em;
+  color: black;
   letter-spacing: 1px;
+  
   
   padding: 15px 0px;
   margin-left: 75px;
@@ -93,21 +119,24 @@ body {
   padding: 0;
   margin-left: 75px;
   
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: .9em;
+  font-family: 'Poppins', sans-serif;
+  font-size: .7em;
   letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .keytakeAwaysTitle_bold {
-  font-size: 1.5em;
-  text-decoration: underline;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
 }
 
 .keytakeAwaysTitle_regular {
-  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+  font-size: .75em;
+  font-weight: lighter;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   padding-bottom: 10px;
 }
 
@@ -140,18 +169,30 @@ body {
 }
 
 .circleGridTitle {
-  font-size: 1em;
+  font-family: 'Poppins',sans-serif;
+  font-size: .9em;
+  font-weight: 400;
+  
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-align: center;
+  
+  color: maroon;
   
   padding: 15px 0px;
 }
 
 figcaption {
+  font-family: 'Gill Sans', sans-serif;
   font-style: italic;
   font-size: .9em;
-  font-weight: bold;
+  letter-spacing: .5px;
+}
+
+.circleGridList {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 200;
+  font-size: .75em;
 }
 
 /*  -----  LAYOUT START HERE -----  */
@@ -197,6 +238,7 @@ header {
 }
 
 .linkMenu {
+  font-family: 'Poppins',sans-serif;
   font-size: .6em;
   text-transform: uppercase;
   text-decoration: none;
@@ -449,7 +491,6 @@ header {
 
 @media (max-width: 750px) {
   .introElements_leftMargin {
-    margin-left: 25px;
   }
 }
 
@@ -906,7 +947,6 @@ header {
 /* Art Direction & UX */
 
 .artDirectionGrid {
-  border: 1px solid red;
   margin: 50px;
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -1053,6 +1093,7 @@ header {
   color: black;
   padding: 15px 0px;
   
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -1103,6 +1144,7 @@ header {
 }
 
 .sensorialCuesListItem {
+  font-family: 'Adobe Garamond Pro', sans-serif;
   flex-basis: 16.67%;
   list-style: none;
   padding: 15px;
