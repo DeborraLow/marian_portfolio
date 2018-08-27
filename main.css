@@ -742,10 +742,12 @@ header {
 }
 
 .mockupPrototype {
+  border: 2px solid red;
   width: 100vw;
   display: flex;
   flex-flow: row nowrap;
   justify-content:space-between;
+  align-items: center;
 }
 
 @media (max-width: 1150px){
@@ -755,8 +757,9 @@ header {
 }
 
 .labelPrototypeItem {
+  border: 2px solid blue;
   position: relative;
-  padding: 0px 25px;
+  padding: 25px;
   
   display: flex;
   flex-flow: column nowrap;
