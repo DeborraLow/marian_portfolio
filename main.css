@@ -627,6 +627,7 @@ header {
 /* Brand Analysis Collage */
 
 .collage {
+  margin: 30px 0px;
   width: 100vw;
   height: auto;
   
@@ -696,7 +697,7 @@ header {
   }
 }
 
-.gucciPrototype {
+.mockupPrototype {
   width: 100vw;
   display: flex;
   flex-flow: row nowrap;
@@ -704,12 +705,12 @@ header {
 }
 
 @media (max-width: 1150px){
-  .gucciPrototype {
+  .mockupPrototype {
     flex-flow: column nowrap;
   }
 }
 
-.gucciPrototypeItem {
+.labelPrototypeItem {
   position: relative;
   padding: 0px 25px;
   
@@ -717,17 +718,17 @@ header {
   flex-flow: column nowrap;
 }
 
-.gucciPrototypeItem article {
+.labelPrototypeItem article {
   margin-bottom: 25px;
 }
 
 @media (max-width: 1150px){
-  .gucciPrototypeItem {
+  .labelPrototypeItem {
     flex-flow: row nowrap;
     padding: 0px;
   }
   
-  .gucciPrototypeItem article {
+  .labelPrototypeItem article {
     flex-basis: 50%;
     margin-bottom: 0px;
     padding: 10px;
@@ -745,77 +746,6 @@ header {
 
 .prototypeImage img {
   width: 100%;
-}
-
-/* CASE STUDY FOOTER */
-
-.suggestCaseStudy {
-  width: 100vw;
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-.suggestCaseStudyItem {
-  position: relative;
-  background-color: black;
-  color: white;
-  
-  flex-basis: 50%;
-  padding: 25px 0px;
-  display: inline-block;
-  
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  letter-spacing: 1px;
-  
-  overflow: hidden;
-  
-  transition: all .3s ease-in-out;
-}
-
-.arrow {
-  position: absolute;
-  top: 32px;
-  left: -50px;
-  
-  width: 50px;
-  height: 1px;
-  background-color: black;
-  
-  transition: all .4s ease-in-out;
-}
-
-.circle {
-  position: absolute;
-  top: -2px;
-  right: 0;
-  
-  background-color: black;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-}
-
-.suggestCaseStudyItem:hover {
-  background-color: white;
-  color: black;
-}
-
-.suggestCaseStudyItem:hover .arrow{
-  left: 50px;
-}
-
-@media (max-width: 700px) {
-  .suggestCaseStudyItem:hover .arrow {
-    left: 15px;
-  }
-}
-
-@media (max-width: 450px) {
-  .suggestCaseStudyItem:hover .arrow {
-    left: -30px;
-  }
 }
 
 /* Emergent Luxury Code */
@@ -840,7 +770,7 @@ header {
 }
 
 .circleGridImage {
-  width: 100px;
+  width: 160px;
   height: auto;
 }
 
@@ -976,6 +906,8 @@ header {
 /* Art Direction & UX */
 
 .artDirectionGrid {
+  border: 1px solid red;
+  margin: 50px;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: 1fr;
@@ -1007,9 +939,24 @@ header {
 
 /* Prototype */
 
+.screenPrototype {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 25px 0px;
+}
+
+@media (max-width:1050px) {
+  .screenPrototype {
+    flex-flow: column nowrap;
+  }
+}
+
 .prototypeFullImage {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 
@@ -1046,4 +993,190 @@ header {
   .careerItem {
     flex-basis: 90%;
   }
+}
+
+/* ----- FOOTER CASE STUDIES ----- */
+
+.links {
+  width: 100%;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  
+  margin: 100px 0px;
+}
+
+.arrow {
+  position: relative;
+  width: 30vw;
+  height: 1px;
+  background-color: black;
+}
+
+.arrowCircleRight {
+  position: absolute;
+  top:-2px;
+  right: 0px;
+  
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.arrowCircleLeft {
+  position: absolute;
+  top:-2px;
+  left: 0px;
+  
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.dynamicLinks {
+  width: 30vw;
+  
+  position: relative;
+  
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.ctaLinks {
+  flex-basis: 33.33%;
+  
+  display: inline-block;
+  color: black;
+  padding: 15px 0px;
+  
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+  font-size: .7em;
+  transition: all .3s ease-in-out;
+}
+
+.ctaLinks:hover {
+  color: #ffdb58;
+}
+
+@media (max-width: 750px) {
+  .links {
+    flex-flow: column nowrap;
+  }
+  .arrow {
+    width: 60vw;
+  }
+  .dynamicLinks {
+    width: 100vw;
+  }
+}
+
+/* Footer Image */
+
+.footerImage {
+  width: 100%;
+  height: auto;
+}
+
+.footerImage img {
+  width: 100%;
+  height: auto;
+}
+
+/* ----- SINGAPORE AIRLINE START HERE ----- */
+
+.sensorialCues {
+  padding: 0px 50px;
+  margin: 50px 0px;
+}
+
+.sensorialCuesList {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.sensorialCuesListItem {
+  flex-basis: 16.67%;
+  list-style: none;
+  padding: 15px;
+}
+
+@media (max-width: 1050px) {
+  .sensorialCuesList {
+    flex-flow: row wrap;
+  }
+  .sensorialCuesListItem {
+    flex-basis: 33.33%;
+  }
+}
+
+@media (max-width: 750px) {  
+  .sensorialCuesListItem {
+    flex-basis: 50%;
+  }
+}
+
+/* ----- CASE STUDY : HOMEPAGE START HERE ----- */
+
+.now {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.nowThumbnail {
+  display: inline-block;
+  position: relative;
+
+  flex-basis: 27%;
+  padding: 25px;
+  
+  transition: all .3s ease-in-out;
+}
+
+.thumbnailImage {
+  height: auto;
+  z-index: -1;
+  opacity: .5;
+  
+  transition: all .3s ease-in-out;
+}
+
+.thumbnailImage img {
+  width: 100%;
+  height: auto;
+}
+
+.thumbnailTitle {
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  
+  z-index: 5;
+  opacity: 1;
+  
+  color: black;
+  font-size: 3em;
+  
+  transition: all .4s ease-in-out;
+}
+
+.thumbnailImage:hover {
+  z-index: 2;
+  opacity: 1;
+}
+
+.nowThumbnail:hover .thumbnailTitle {
+  z-index: -5;
+  font-size: 2.8em;
+  left: 10px;
+  opacity: .2;
 }

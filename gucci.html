@@ -9,15 +9,15 @@
 <body>
    
     <!-- HEADER -->
-  <header>
+  <header id="top">
    <div class="headerLogo">
       <a href="#"><img src="images/hs_logo_darkblue.png" alt="Marian St Laurent Logo"></a>
    </div>
    
    <nav class="menu">
       <ul class="menuList">
-        <li class="menuListItem"><a href="#" class="link linkMenu">Case Studies</a></li>
-        <li class="menuListItem"><a href="#" class="link linkMenu">Curriculum Vitae</a></li>
+        <li class="menuListItem"><a href="/casestudyhome.html" class="link linkMenu">Case Studies</a></li>
+        <li class="menuListItem"><a href="/cv.html" class="link linkMenu">Curriculum Vitae</a></li>
         <li class="menuListItem"><a href="#" class="link linkMenu">Inspiration</a></li>
       </ul>
     </nav>
@@ -377,9 +377,9 @@
       <p class="introParagraph introElements_leftMargin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi illo eveniet, adipisci quaerat. Officia consequuntur voluptatum, iste! Odio impedit delectus adipisci facere unde, perspiciatis consequuntur optio asperiores voluptate natus mollitia dolorem nihil cupiditate nemo sequi praesentium necessitatibus error quisquam.</p>
     </article>
     
-    <div class="gucciPrototype">
+    <div class="mockupPrototype">
      
-      <div class="gucciPrototypeItem">
+      <div class="labelPrototypeItem">
        
         <article>
           <h5>1.</h5>
@@ -392,10 +392,10 @@
           <h5>2.</h5>
           <h4>Information layers appear <br> color coding</h4>
           <ul>
-            <li>Costume & Fashion</li>
-            <li>Pop culture</li>
-            <li>Cinema & Art History</li>
-            <li>Image Makers</li>
+            <li class="captionItalic">Costume & Fashion</li>
+            <li class="captionItalic">Pop culture</li>
+            <li class="captionItalic">Cinema & Art History</li>
+            <li class="captionItalic">Image Makers</li>
           </ul>
 
           <div class="lineLeftToRight"></div>
@@ -406,7 +406,7 @@
         <img src="images/gucci/gucci_prototype.png" alt="">
       </div>
       
-      <div class="gucciPrototypeItem">
+      <div class="labelPrototypeItem">
         <article>
 
           <h5>3.</h5>
@@ -440,19 +440,30 @@
     
   </main>
   
-  <footer class="suggestCaseStudy">
-    <a href="/sgh.html" class="suggestCaseStudyItem">
-    SunglassHut
-      <div class="arrow">
-        <div class="circle"></div>
-      </div>
-    </a>
-    <a href="" class="suggestCaseStudyItem">
-    Singapore Airline
+    <!-- CASE STUDY LINKS -->
+  
+  <div class="links">
     <div class="arrow">
-      <div class="circle"></div>
+      <div class="arrowCircleRight"></div>
     </div>
-    </a>
+    
+    <div class="dynamicLinks">
+      <a href="#top" class="ctaLinks">back to top</a>
+      <a href="/sgh.html" class="ctaLinks"> premium eyewear</a>
+      <a href="/sa.html" class="ctaLinks">premium travel</a>
+    </div>
+    
+    <div class="arrow">
+      <div class="arrowCircleLeft"></div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  
+  <footer>
+    <div class="footerImage">
+      <img src="images/sgh/footerPage.png" alt="">
+    </div>
   </footer>
   
 </body>
