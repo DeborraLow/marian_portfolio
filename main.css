@@ -11,7 +11,7 @@ html {
 
 @media (max-width: 750px) {
   html {
-    font-size: 80%;
+    font-size: 90%;
   }
 }
 
@@ -97,8 +97,9 @@ p {
 .captionItalic {
   font-family: 'Adobe Garamond Pro', sans-serif;
   font-style: italic;
+  font-weight: 400;
   letter-spacing: 1px;
-  font-size: .8em;
+  font-size: .9em;
 }
 
 .keytakeAwaysTittle {
@@ -129,9 +130,20 @@ p {
 .keytakeAwaysTitle_bold {
   font-family: 'Poppins', sans-serif;
   font-size: 1em;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 10px;
+}
+
+.keytakeAwaysTitle_semibold {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+  text-decoration: none;
 }
 
 .keytakeAwaysTitle_regular {
@@ -196,6 +208,11 @@ figcaption {
   font-family: 'Avenir', sans-serif;
   font-weight: 200;
   font-size: .75em;
+}
+
+.careerItem h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
 }
 
 /*  -----  LAYOUT START HERE -----  */
@@ -291,7 +308,7 @@ header {
 }
 
 .effectOne {
-  background-color: gray;
+  background-color: white;
   color: lightgray;
   
   transition: all .4s ease-in-out;
@@ -314,25 +331,24 @@ header {
 }
 
 .effectTwo {
-  background-image: linear-gradient(black,black);
   background-size: cover;
   background-position: right;
   color: dimgrey;
   
-  transition: all .4s ease-in-out;
+  transition: all .7s ease-in-out;
 }
 
 .effectTwo:hover {
   border: 25px double white;
-  background-image: url(images/splash_bgrd_2.jpg);
+  background-image: url(images/caseStudyHome/02_sgh.png);
   background-size: cover;
   background-position: left;
+  background-repeat: no-repeat;
   color: maroon;
   text-decoration: line-through;
 }
 
 .containerItemSpecial {
-    border: 10px solid black;
     overflow: hidden;
     position: relative;
   
@@ -488,12 +504,29 @@ header {
   }
 }
 
+.introCv {
+  width: 60vw;
+}
+
+@media (max-width: 1050px) {
+  .introCv {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 750px) {
+  .introCv {
+    width: 100vw;
+  }
+}
+
 .introElements_leftMargin {
   margin-left: 75px;
 }
 
 @media (max-width: 750px) {
   .introElements_leftMargin {
+    margin-left: 35px;
   }
 }
 
@@ -965,6 +998,7 @@ header {
   .artDirectionGrid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,1fr);
+    margin: 25px;
   }
   .artDirectionImage img {
     width: 500px;
@@ -1014,31 +1048,116 @@ header {
 
 /*  ----- CURRICULUM VITAE STYLE -----  */
 
-.career {
+.anchorLinks {
+  width: 60vw;
+  margin-left: 75px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.anchorLinksCv {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: .6em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.anchorLinksCv:hover {
+  text-decoration: line-through;
+}
+
+.contactLinks {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 60vw;
+  margin: 25px 25px 25px 75px;
+}
+
+.contactLinks a {
+  display: inline-block;
+  padding: 10px;
+}
+
+.contactLinks a:hover {
+  text-decoration: line-through;
+}
+
+@media (max-width: 750px) {
+  .anchorLinks {
+    margin-left: 35px;
+  }
+  
+  .anchorLinksCv {
+    padding: 10px 10px 10px 0px; 
+  }
+  
+  .contactLinks {
+    margin: 25px 25px 25px 35px;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items:
+  }
+  
+  .contactLinks p {
+    padding: 10px;
+  }
+}
+
+.career {
+  margin-left: 75px;
+  width: 60vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
 }
 
 .careerItem {
-  flex-basis: 25%;
-  padding: 25px;
+  flex-basis: 33.33%;
+  padding: 25px 25px 25px 0px;
 }
 
-@media (max-width:850px) {
+.careerItem ul {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width:1050px) {
   .career {
     flex-flow: row wrap;
   }
-  
   .careerItem {
     flex-basis: 50%;
   }
 }
 
-@media (max-width:450px) {
-  .careerItem {
-    flex-basis: 90%;
+@media (max-width:750px) {
+  .career {
+    width: 90vw;
+    margin-left: 35px;
   }
+}
+
+@media (max-width:450px) {
+  .career{
+    width: 80vw;
+    margin-top: 35px;
+  }
+  
+  .careerItem {
+    flex-basis: 100%;
+  }
+}
+
+.careerItem article {
+  margin-bottom: 25px;
+  text-align: left;
 }
 
 /* ----- FOOTER CASE STUDIES ----- */
@@ -1110,18 +1229,17 @@ header {
 }
 
 .ctaLinks:hover {
-  color: #ffdb58;
+  text-decoration: line-through;
 }
 
 @media (max-width: 750px) {
   .links {
-    flex-flow: column nowrap;
   }
   .arrow {
-    width: 60vw;
+    width: 3vw;
   }
   .dynamicLinks {
-    width: 100vw;
+    width: 90vw;
   }
 }
 
