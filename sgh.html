@@ -332,7 +332,7 @@
           <h4 class="specsTitle">Dominant<br> fashion codes</h4>
           <h6 class="keytakeAwaysTitle_regular">POP CULTURE FIRST</h6>
           <p class="captionItalic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio maiores, eum explicabo dolores maxime. Ut, modi.</p>
-          <div class="lineLeftToRight"></div>
+          <div class="lineScreenshot"></div>
         </article>
 
         <article>
@@ -345,7 +345,7 @@
             <li class="captionItalic">"Loved by everyone."</li>
           </ul>
 
-          <div class="lineLeftToRight"></div>
+          <div class="lineScreenshot"></div>
         </article>
       </div>
       
@@ -372,7 +372,7 @@
           <h4 class="specsTitle">Content</h4>
           <h6 class="keytakeAwaysTitle_regular">" THE EDIT "</h6>
           <p class="captionItalic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio maiores, eum explicabo dolores maxime. Ut, modi.</p>
-          <div class="lineLeftToRight"></div>
+          <div class="lineScreenshot"></div>
         </article>
       </div>
       
@@ -400,17 +400,23 @@
       </div>
     </article>
     
-    <div class="mockupPrototype">
-     
-      <div class="labelPrototypeItem">
-       
+    <div class="mockupMedium">
+      <div class="mockupMediumItem">
         <article>
           <h5 class="keytakeAwaysTitle_bold">1.</h5>
           <h4 class="specsTitle">scan clothing / campaign ad <br> mechanics</h4>
           <p class="captionItalic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio maiores, eum explicabo dolores maxime. Ut, modi.</p>
           <div class="lineLeftToRight"></div>
         </article>
-
+        <div class="mockupMediumImage">
+          <img src="images/sgh/prototype/sgh_collaborations1.png" alt="">
+        </div>
+      </div>
+      
+      <div class="mockupMediumItem">
+        <div class="mockupMediumImage">
+          <img src="images/sgh/prototype/sgh_collaborations2.png" alt="">
+        </div>
         <article>
           <h5 class="keytakeAwaysTitle_bold">2.</h5>
           <h4 class="specsTitle">Information layers appear <br> color coding</h4>
@@ -420,32 +426,31 @@
             <li class="captionItalic">Cinema & Art History</li>
             <li class="captionItalic">Image Makers</li>
           </ul>
-
-          <div class="lineLeftToRight"></div>
+          <div class="lineRightToLeft"></div>
         </article>
       </div>
       
-      <div class="prototypeImage">
-        <img src="images/sgh/prototype/prototypeMobScreens.png" alt="">
-      </div>
-      
-      <div class="labelPrototypeItem">
+      <div class="mockupMediumItem">
         <article>
-
           <h5 class="keytakeAwaysTitle_bold">3.</h5>
           <h4 class="specsTitle">"Generate plot" Cta <br> Themes & plot twists </h4>
           <p class="captionItalic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio maiores, eum explicabo dolores maxime. Ut, modi.</p>
-          <div class="lineRightToLeft"></div>
+          <div class="lineLeftToRight"></div>
         </article>
-
+        <div class="mockupMediumImage">
+          <img src="images/sgh/prototype/sgh_collaborations4.png" alt="">
+        </div>
+      </div>
+      
+      <div class="mockupMediumItem">
+        <div class="mockupMediumImage">
+          <img src="images/sgh/prototype/sgh_mockup_brandpage1.png" alt="">
+        </div>
         <article>
           <h5 class="keytakeAwaysTitle_bold">4.</h5>
           <h4 class="specsTitle">"Begin" CTA <br> characters</h4>
           <p class="captionItalic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio maiores, eum explicabo dolores maxime. Ut, modi.</p>
-          <div class="lineRightToLeft"></div>
-        </article>
-
-        <article>
+          <div class="lineRightToLeft"></div> <br><br>
           <h4 class="specsTitle">POV GamePlay<br> locations</h4>
           <p class="captionItalic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta obcaecati, perspiciatis enim? Facilis tenetur provident, ipsa?</p>
         </article>
@@ -496,6 +501,13 @@
       origin: 'top',
       easing: 'ease-in-out'
     });
+    ScrollReveal().reveal('.lineScreenshot', { 
+          delay : 750,
+          duration : 1500,
+          distance : '100px',
+          origin : 'right',
+          easing : 'ease-in-out'
+        });
     ScrollReveal().reveal('.introArrow', { 
           delay : 750,
           duration : 1500,
@@ -503,6 +515,26 @@
           origin : 'left',
           easing : 'ease-in-out'
         });
+    ScrollReveal().reveal('.lineLeftToRight', { 
+          delay : 850,
+          duration : 1000,
+          distance : '100px',
+          origin : 'right',
+          easing : 'ease-in-out'
+        });
+    ScrollReveal().reveal('.lineRightToLeft', { 
+          delay : 850,
+          duration : 1000,
+          distance : '100px',
+          origin : 'left',
+          easing : 'ease-in-out'
+        });
+    ScrollReveal().reveal('.mockupMediumItem article',{
+      delay:750,
+      easing: 'ease-in-out',
+      distance: '20px',
+      origin: 'top',
+    });
     ScrollReveal().reveal('.specs',{
       delay:750,
       easing: 'ease-in-out',
@@ -534,6 +566,12 @@
           easing : 'ease-in-out'
         });
     ScrollReveal().reveal('.approachTitle',{
+      delay:500,
+      easing: 'ease-in-out',
+      distance: '20px',
+      origin: 'top',
+    });
+    ScrollReveal().reveal('.labelPrototypeItem article',{
       delay:500,
       easing: 'ease-in-out',
       distance: '20px',

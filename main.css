@@ -774,58 +774,63 @@ header {
   }
 }
 
-.mockupPrototype {
-  border: 2px solid red;
-  width: 100vw;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content:space-between;
-  align-items: center;
-}
+/* --------- LOOK HERE --------- */
 
-@media (max-width: 1150px){
-  .mockupPrototype {
-    flex-flow: column nowrap;
+  .mockupMedium {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
   }
-}
-
-.labelPrototypeItem {
-  border: 2px solid blue;
-  position: relative;
-  padding: 25px;
-  
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.labelPrototypeItem article {
-  margin-bottom: 25px;
-}
-
-@media (max-width: 1150px){
-  .labelPrototypeItem {
-    flex-flow: row nowrap;
-    padding: 0px;
+  .lineLeftToRight {
+    position: absolute;
+    left: 100px;
+    width: 200px;
+    height: 1px;
+    background-color: black;
+    margin-top: 5px;
   }
-  
-  .labelPrototypeItem article {
+  .lineRightToLeft {
+    position: absolute;
+    right: 100px;
+    width: 200px;
+    height: 1px;
+    background-color: black;
+    margin-top: 5px;
+  }
+  .mockupMediumItem {
     flex-basis: 50%;
-    margin-bottom: 0px;
-    padding: 10px;
-  }
-  
-  .prototypeImage {
+    display: flex;
+    flex-flow: row nowrap;
     padding: 25px;
   }
+  .mockupMediumItem article {
+    position: relative;
+    flex-basis: 100%;
+    padding: 25px;
+  }
+  .mockupMediumImage {
+    width: 100%;
+    height: auto;
+  }
+  .mockupMediumImage img {
+    width: 100%;
+    height: auto;
+  }
+
+@media (max-width: 750px){
+  .mockupMediumItem {
+    flex-basis: 100%;
+  }
+  .lineLeftToRight {
+    width: 150px;
+    left: 100px;
+  }
 }
 
-.prototypeImage {
-  min-width: 60vw;
-  height: auto;
-}
-
-.prototypeImage img {
-  width: 100%;
+@media (max-width: 375px) {
+  .mockupMediumItem > article > p,ul {
+    display: none;
+  }
 }
 
 /* Emergent Luxury Code */
@@ -1020,22 +1025,38 @@ header {
 /* Prototype */
 
 .screenPrototype {
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 25px;
+  
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  
-  margin: 25px 0px;
 }
 
-@media (max-width:1050px) {
-  .screenPrototype {
-    flex-flow: column nowrap;
-  }
+.labelPrototypeItem {
+  flex-basis: 60%;
+}
+.labelPrototypeItem article {
+  position: relative;
+  margin-bottom: 25px;
+  padding: 50px;
 }
 
+.labelPrototypeItem > article > p,ul{
+  width: 70%;
+}
+
+.lineScreenshot {
+  position: absolute;
+  left: 200px;
+  width: 200px;
+  height: 1px;
+  background-color: black;
+  margin-top: 10px;
+}
 .prototypeFullImage {
-  margin: 0 auto;
   width: 100%;
   height: auto;
 }
@@ -1046,6 +1067,11 @@ header {
 }
 
 
+@media (max-width:1050px) {
+  .screenPrototype {
+    
+  }
+}
 /*  ----- CURRICULUM VITAE STYLE -----  */
 
 .anchorLinks {
@@ -1348,4 +1374,15 @@ header {
   font-size: 1.8em;
   left: 10px;
   opacity: .2;
+}
+
+@media (max-width:750px){
+  .now {
+    flex-flow: column nowrap;
+  }
+  .nowThumbnail {
+    flex-basis: 50%;
+    margin: 25px;
+  }
+  
 }

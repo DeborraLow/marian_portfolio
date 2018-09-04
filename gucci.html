@@ -6,6 +6,11 @@
   <title>Gucci Decoder | Case Studies | Marian's Portfolio</title>
   <link rel="stylesheet" href="main.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+      <!-- Jquery : ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+  <script>
+    ScrollReveal({ duration: 1000 })
+  </script>
 </head>
 <body>
    
@@ -378,17 +383,25 @@
       <p class="introParagraph introElements_leftMargin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi illo eveniet, adipisci quaerat. Officia consequuntur voluptatum, iste! Odio impedit delectus adipisci facere unde, perspiciatis consequuntur optio asperiores voluptate natus mollitia dolorem nihil cupiditate nemo sequi praesentium necessitatibus error quisquam.</p>
     </article>
     
-    <div class="mockupPrototype">
-     
-      <div class="labelPrototypeItem">
-       
+    <!-- Mockup for Tablet & mobile-->
+    
+    <div class="mockupMedium">
+      <div class="mockupMediumItem">
         <article>
           <h5 class="keytakeAwaysTitle_bold">1.</h5>
           <h4 class="specsTitle">scan clothing / campaign ad <br> mechanics</h4>
           <p class="captionItalic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio maiores, eum explicabo dolores maxime. Ut, modi.</p>
           <div class="lineLeftToRight"></div>
         </article>
-
+        <div class="mockupMediumImage">
+          <img src="images/gucci/prototype/decoder_screen1.png" alt="">
+        </div>
+      </div>
+      
+      <div class="mockupMediumItem">
+        <div class="mockupMediumImage">
+          <img src="images/gucci/prototype/decoder_screen2.png" alt="">
+        </div>
         <article>
           <h5 class="keytakeAwaysTitle_bold">2.</h5>
           <h4 class="specsTitle">Information layers appear <br> color coding</h4>
@@ -398,32 +411,31 @@
             <li class="captionItalic">Cinema & Art History</li>
             <li class="captionItalic">Image Makers</li>
           </ul>
-
-          <div class="lineLeftToRight"></div>
+          <div class="lineRightToLeft"></div>
         </article>
       </div>
       
-      <div class="prototypeImage">
-        <img src="images/gucci/gucci_prototype.png" alt="">
-      </div>
-      
-      <div class="labelPrototypeItem">
+      <div class="mockupMediumItem">
         <article>
-
           <h5 class="keytakeAwaysTitle_bold">3.</h5>
           <h4 class="specsTitle">"Generate plot" Cta <br> Themes & plot twists </h4>
           <p class="captionItalic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio maiores, eum explicabo dolores maxime. Ut, modi.</p>
-          <div class="lineRightToLeft"></div>
+          <div class="lineLeftToRight"></div>
         </article>
-
+        <div class="mockupMediumImage">
+          <img src="images/gucci/prototype/decoder_screen3.png" alt="">
+        </div>
+      </div>
+      
+      <div class="mockupMediumItem">
+        <div class="mockupMediumImage">
+          <img src="images/gucci/prototype/decoder_screen4.png" alt="">
+        </div>
         <article>
           <h5 class="keytakeAwaysTitle_bold">4.</h5>
           <h4 class="specsTitle">"Begin" CTA <br> characters</h4>
           <p class="captionItalic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio maiores, eum explicabo dolores maxime. Ut, modi.</p>
-          <div class="lineRightToLeft"></div>
-        </article>
-
-        <article>
+          <div class="lineRightToLeft"></div> <br><br>
           <h4 class="specsTitle">POV GamePlay<br> locations</h4>
           <p class="captionItalic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta obcaecati, perspiciatis enim? Facilis tenetur provident, ipsa?</p>
         </article>
@@ -467,5 +479,102 @@
     </div>
   </footer>
   
+  <!-- Jquery --> 
+  
+  <script>
+    ScrollReveal().reveal('.intro',{
+      delay:500,
+      distance: '20px',
+      origin: 'top',
+      easing: 'ease-in-out'
+    });
+    ScrollReveal().reveal('.introArrow', { 
+          delay : 750,
+          duration : 1500,
+          distance : '500px',
+          origin : 'left',
+          easing : 'ease-in-out'
+        });
+    ScrollReveal().reveal('.lineLeftToRight', { 
+          delay : 500,
+          duration : 1000,
+          distance : '100px',
+          origin : 'right',
+          easing : 'ease-in-out'
+        });
+    ScrollReveal().reveal('.lineRightToLeft', { 
+          delay : 500,
+          duration : 1000,
+          distance : '100px',
+          origin : 'left',
+          easing : 'ease-in-out'
+        });
+    ScrollReveal().reveal('.mockupMediumItem article',{
+      delay:750,
+      easing: 'ease-in-out',
+      distance: '20px',
+      origin: 'top',
+    });
+    ScrollReveal().reveal('.specs',{
+      delay:750,
+      easing: 'ease-in-out',
+      distance: '20px',
+      origin: 'top',
+    });
+    ScrollReveal().reveal('.heroImage',{
+      delay:1000,
+      easing: 'ease-in-out',
+      distance: '20px',
+      origin: 'top',
+    });
+    ScrollReveal().reveal('.introApproach',{
+      delay:500,
+      easing: 'ease-in-out',
+      distance: '20px',
+      origin: 'top',
+    });
+    ScrollReveal().reveal('.keytakeAwaysWrapper',{
+      delay:500,
+      easing: 'ease-in-out',
+      distance: '20px',
+      origin: 'top',
+    });
+    ScrollReveal().reveal('.keytakeAwaysArrow', { 
+          duration : 1500,
+          distance : '500px',
+          origin : 'right',
+          easing : 'ease-in-out'
+        });
+    ScrollReveal().reveal('.approachTitle',{
+      delay:500,
+      easing: 'ease-in-out',
+      distance: '20px',
+      origin: 'top',
+    });
+    ScrollReveal().reveal('.benchmarkingMapSgh',{
+      delay:500,
+      easing: 'ease-in-out',
+      distance: '20px',
+      origin: 'top',
+    });
+    ScrollReveal().reveal('.circleGrid',{
+      delay:850,
+      easing: 'ease-in-out',
+      distance: '20px',
+      origin: 'top',
+    });
+    ScrollReveal().reveal('.sectorMapSgh',{
+      delay:850,
+      easing: 'ease-in-out',
+      distance: '20px',
+      origin: 'top',
+    });
+    ScrollReveal().reveal('.artDirectionGridItem',{
+      delay:950,
+      easing: 'ease-in-out',
+      distance: '20px',
+      origin: 'top',
+    });
+  </script>
 </body>
 </html>
