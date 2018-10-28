@@ -16,19 +16,20 @@
   
   <!-- HEADER -->
    
-  <header id="top">
-   <div class="headerLogo">
-      <a href="/index.html"><img src="images/hs_logo_darkblue.png" alt="Marian St Laurent Logo"></a>
-   </div>
-   
-   <nav class="menu">
-      <ul class="menuList">
-        <li class="menuListItem"><a href="/casestudyhome.html" class="link linkMenu">Case Studies</a></li>
-        <li class="menuListItem"><a href="/cv.html" class="link linkMenu">Curriculum Vitae</a></li>
-        <li class="menuListItem"><a href="#" class="link linkMenu">Inspiration</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- HEADER -->
+  <header class="header">
+      <a href="/index.html" class="header--logo">
+        <img src="/images/homepage/marian_st_laurent_logo.svg" alt="">
+      </a>
+  
+      <nav class="header--main-nav">
+        <ul class="header--list">
+          <li class="header--list-item"><a href="/casestudyhome.html">case studies</a></li>
+          <li class="header--list-item"><a href="/cv.html">curriculum</a></li>
+          <li class="header--list-item"><a href="/inspiration.html">inspiration</a></li>
+        </ul>
+      </nav>
+    </header>
   
   <main class="wrapper">
   
@@ -36,9 +37,11 @@
   
    <article class="intro" id="competitor">
       <h3 class="approachTitle introElements_leftMargin">Now</h3>
-      <div class="introArrow">
-        <img src="images/scroll_symbol_left.svg" alt="guide arrow">
+
+      <div class="arrow">
+        <div class="arrowCircleRight"></div>
       </div>
+
     </article>
    
     <div class="now">
@@ -66,9 +69,11 @@
   
    <article class="intro" id="competitor">
       <h3 class="approachTitle introElements_leftMargin">Then</h3>
-      <div class="introArrow">
-        <img src="images/scroll_symbol_left.svg" alt="guide arrow">
+
+      <div class="arrow">
+        <div class="arrowCircleRight"></div>
       </div>
+
     </article>
    
     <div class="now">
@@ -102,7 +107,7 @@
           origin: 'top',
           easing : 'ease-in-out'
         });
-    ScrollReveal().reveal('.introArrow', { 
+    ScrollReveal().reveal('.arrow', { 
           delay : 750,
           duration : 1500,
           distance : '500px',
