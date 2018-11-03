@@ -173,16 +173,14 @@ p {
   font-size: .8em;
   color: black;
   letter-spacing: 1px;
-  
-  
+
   padding: 15px 0px;
-  margin-left: 75px;
 }
 
 .keytakeAwaysList {
+  width: 100%;
   list-style: none;
   padding: 0;
-  margin-left: 75px;
   
   font-family: 'Poppins', sans-serif;
   font-size: .7em;
@@ -606,7 +604,6 @@ figcaption {
 
 .keytakeAwaysWrapper{
   margin: 25px 0px;
-  width: 100vw;
   
   display: flex;
   flex-flow: row nowrap;
@@ -616,13 +613,13 @@ figcaption {
   overflow: hidden;
 }
 
-.keytakeAwaysArrow {
-  position: relative;
-  right: -50px;
-}
-
 .keytakeAways {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+
   width: 40vw;
+  text-align: right;
 }
 
 @media (max-width: 1050px) {
@@ -722,7 +719,7 @@ figcaption {
 /* --------- LOOK HERE --------- */
 
   .mockupMedium {
-    margin: 0px 75px;
+    border: 2px solid red;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -806,16 +803,12 @@ figcaption {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: 1fr;
-      
-  margin: 0px 75px;
 }
 
 @media (max-width: 1000px){
   .circleGrid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,1fr);
-
-    margin: 0px 25px;
   }
 }
 
@@ -868,6 +861,7 @@ figcaption {
 /* Insight */
 
 .insightGrid {
+  border: 2px solid red;
   display: grid;
   grid-template-columns: repeat(8,minmax(100px, auto));
   grid-template-rows: repeat(6,minmax(100px, auto));
@@ -899,40 +893,42 @@ figcaption {
   object-fit: cover;
 }
 
-.insightGrid--item img {
-  padding: 0px 15px;
+.insightGrid--item > p {
+  padding: 0px 20px;
+  text-align: center;
+}
+.insightGrid--item > h3 {
+  text-align: center;
+}
+.insightGrid--item > h4 {
+  text-align: center;
 }
 
-@media (max-width:700px) {
-}
+@media (max-width: 900px){
 
-.insightElement {
-  padding: 0px 50px;
-  width: 100%;
-  height: auto;
-  
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-}
+  .insightGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+  }
 
-@media (max-width: 700px){
+  .insightGrid :nth-child(1){
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .insightGrid :nth-child(2){
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .insightGrid :nth-child(3){
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
   .insightElement {
     padding: 0px;
   }
-}
-
-.insightElement img {
-  width: 100%;
-  height: auto;
-
-  object-fit: fill;
-}
-
-.insightElement p {
-  padding: 0px 25px;
-  text-align: center;
 }
 
 /* ---- SGH STYLES HERE ---- */
@@ -1120,7 +1116,6 @@ figcaption {
 }
 
 .career {
-  margin-left: 75px;
   width: 60vw;
   display: flex;
   flex-flow: row nowrap;
