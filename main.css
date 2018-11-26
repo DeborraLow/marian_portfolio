@@ -21,7 +21,6 @@ img {
 }
 
 .body-wrapper {
-  border: 2px solid purple;
   /* very important!!! */
   overflow: hidden;
 }
@@ -29,7 +28,6 @@ img {
 .wrapper {
   /* to maintain the contain inside the wrapper */
   margin: 0px 75px;
-  border: 2px solid red;
 }
 
 @media (max-width:750px){
@@ -719,7 +717,6 @@ figcaption {
 /* --------- LOOK HERE --------- */
 
   .mockupMedium {
-    border: 2px solid red;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
